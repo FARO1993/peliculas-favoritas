@@ -1,0 +1,235 @@
+/* ---------- Formulario ---------- */
+.pelicula-form {
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  padding: 1.3rem;
+  background-color: white;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.pelicula-form h2 {
+  margin: 0 0 0.3rem;
+  font-size: 1.15rem;
+}
+
+.pelicula-form__fila {
+  display: flex;
+  gap: 1rem;
+}
+
+.pelicula-form__fila .pelicula-form__campo {
+  flex: 1;
+}
+
+.pelicula-form__campo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.pelicula-form__campo label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.pelicula-form__campo input {
+  padding: 0.55rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.pelicula-form__error {
+  margin: 0;
+  font-size: 0.78rem;
+  color: #dc2626;
+}
+
+.pelicula-form__acciones {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.pelicula-form__acciones button {
+  padding: 0.55rem 1.1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #2563eb;
+  color: white;
+  font-weight: 600;
+}
+
+.pelicula-form__acciones button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.pelicula-form__acciones button[type="button"] {
+  background-color: #e2e2e2;
+  color: #333;
+}
+
+/* ---------- Listado ---------- */
+.listado__toolbar {
+  margin-bottom: 1rem;
+}
+
+.buscador {
+  width: 100%;
+  padding: 0.6rem 0.9rem;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.listado__estado {
+  text-align: center;
+  color: #555;
+  padding: 1.5rem 0;
+}
+
+.listado__error {
+  color: #dc2626;
+  font-weight: 600;
+  text-align: center;
+  padding: 0.7rem 0;
+}
+
+.listado__lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+/* ---------- Card ---------- */
+.pelicula-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  background-color: white;
+}
+
+.pelicula-card__info h3 {
+  margin: 0 0 0.2rem;
+  font-size: 1.05rem;
+}
+
+.pelicula-card__anio {
+  color: #888;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.pelicula-card__meta {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.pelicula-card__acciones {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.pelicula-card__acciones button,
+.pelicula-card__detalle {
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  border: 1px solid #d0d0d0;
+  background: white;
+  text-decoration: none;
+  color: #333;
+}
+
+.pelicula-card__favorita--activa {
+  background-color: #fef3c7;
+  border-color: #f59e0b;
+  color: #92400e;
+}
+
+.pelicula-card__eliminar {
+  border-color: #fca5a5;
+  color: #b91c1c;
+}
+
+/* ---------- Detalle ---------- */
+.detalle {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  border: 1px solid #e2e2e2;
+}
+
+.detalle__volver {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.detalle__favorita {
+  color: #f59e0b;
+}
+
+.detalle__lista {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* ---------- Login ---------- */
+.login {
+  max-width: 360px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin-top: 1rem;
+}
+
+.login__form input {
+  padding: 0.6rem 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.login__form button {
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #2563eb;
+  color: white;
+  font-weight: 600;
+}
+
+/* ---------- 404 ---------- */
+.not-found {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.not-found h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}

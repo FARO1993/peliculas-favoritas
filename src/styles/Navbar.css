@@ -1,0 +1,36 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: #1e293b;
+}
+
+.navbar__marca {
+  color: #f1f5f9;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.navbar__auth {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.navbar__usuario {
+  color: #cbd5e1;
+  font-size: 0.9rem;
+}
+
+.navbar__auth button,
+.navbar__login {
+  background: none;
+  border: 1px solid #93c5fd;
+  color: #93c5fd;
+  padding: 0.4rem 0.9rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
