@@ -12,7 +12,6 @@
 ## 📸 Capturas de pantalla
 
 ![Listado de películas](assets/listado.png)
-![Formulario de alta/edición](assets/formulario.png)
 ![Detalle de una película](assets/detalle.png)
 ![Página 404](assets/404.png)
 
