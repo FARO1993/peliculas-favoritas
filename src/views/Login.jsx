@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 
 function Login() {
@@ -8,6 +8,8 @@ function Login() {
   const inputRef = useRef(null);
   const { iniciarSesion } = useAuth();
   const navigate = useNavigate();
+  const location = useLocation();
+  const destino = location.state?.from?.pathname || "/";
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -19,7 +21,7 @@ function Login() {
     }
 
     iniciarSesion(nombre.trim());
-    navigate("/");
+    navigate(destino, { replace: true });
   };
 
   return (
